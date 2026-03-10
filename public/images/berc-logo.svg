@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 50" fill="none">
+  <!-- Yellow/Gold circle (left, smaller) -->
+  <circle cx="25" cy="25" r="22" stroke="#E6B325" stroke-width="3" fill="none"/>
+  <!-- Orange circle (right, overlapping) -->
+  <circle cx="55" cy="25" r="22" stroke="#E07730" stroke-width="3" fill="none"/>
+  <!-- BERC text positioned within circles -->
+  <text x="14" y="31" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#4A5568">B</text>
+  <text x="30" y="31" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#4A5568">E</text>
+  <text x="46" y="31" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#4A5568">R</text>
+  <text x="62" y="31" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#4A5568">C</text>
+</svg>

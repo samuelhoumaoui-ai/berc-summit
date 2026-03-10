@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx --version)",
+      "Bash(npm install)",
+      "Bash(sudo chown -R 501:20 \"/Users/samuelhoumaoui/.npm\")",
+      "Bash(curl -v \"https://logo.clearbit.com/pge.com\")",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/pge.svg:*)",
+      "Bash(__NEW_LINE_6dba5ff26a6994de__ cat)",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/edf.svg:*)",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/wilson-sonsini.svg:*)",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/lbl.svg:*)",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/socal-edison.svg:*)",
+      "Bash(/Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/norton-rose.svg:*)",
+      "Bash(__NEW_LINE_6dba5ff26a6994de__ ls -lh /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/)",
+      "Bash(file /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/*.png)",
+      "Bash(file /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/*.svg)",
+      "Bash(open http://localhost:3000)"
+    ]
+  }
+}
