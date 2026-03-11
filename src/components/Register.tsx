@@ -116,7 +116,7 @@ export default function Register() {
                     </p>
                   )}
                   <a
-                    href="https://luma.com/5746aaa7"
+                    href="https://luma.com/electrocene"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full font-typewriter py-3 transition-all duration-200 border border-white/40 text-white hover:bg-white hover:text-[var(--bg-dark)] text-center"
@@ -140,7 +140,7 @@ export default function Register() {
           </p>
           <p className="text-white/50 text-sm mb-3">
             Check{' '}
-            <a href="https://luma.com/5746aaa7" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">luma</a>
+            <a href="https://luma.com/electrocene" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">luma</a>
             {' '}for all tickets. If you are a Cal student, check{' '}
             <a href="https://haas.campusgroups.com/bercathaas/rsvp_boot?id=2251145" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">Campus Groups</a>.
           </p>
