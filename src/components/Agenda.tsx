@@ -118,6 +118,7 @@ const day2Panels = [
     description: 'Exploring what it takes to build the supply chains required for reliable, electrified energy systems from the perspective of investors and entrepreneurs.',
     speakers: [
       { name: 'Melissa Zhang', title: 'Principal, Azimuth Capital Management' },
+      { name: 'Leonardo Banchik, PhD', title: 'Director, Voyager Ventures' },
     ],
   },
 ];
