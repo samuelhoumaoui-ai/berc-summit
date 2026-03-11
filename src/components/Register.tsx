@@ -9,7 +9,8 @@ import Image from 'next/image';
 const tickets = [
   {
     type: 'Student',
-    price: '$65',
+    earlyPrice: '$45',
+    latePrice: '$65',
     icon: GraduationCap,
     features: [
       'Two-day access (April 20 & 22)',
@@ -21,7 +22,8 @@ const tickets = [
   },
   {
     type: 'Professional',
-    price: '$180',
+    earlyPrice: '$150',
+    latePrice: '$180',
     icon: Users,
     features: [
       'Two-day access (April 20 & 22)',
@@ -81,11 +83,20 @@ export default function Register() {
               <div className="h-full border border-white/20 bg-white/5 hover:border-white/40 p-8 transition-all duration-200 flex flex-col">
                 <div className="text-center mb-6">
                   <ticket.icon className="w-10 h-10 mx-auto mb-4 text-white" />
-                  <h3 className="font-typewriter text-lg mb-2 text-white">
+                  <h3 className="font-typewriter text-lg mb-3 text-white">
                     {ticket.type}
                   </h3>
-                  <div className="font-typewriter text-3xl text-[var(--accent-electric)]">
-                    {ticket.price}
+                  <div className="mb-1">
+                    <span className="text-xs font-typewriter text-[var(--accent-electric)] uppercase tracking-widest block mb-0.5">Early Bird</span>
+                    <div className="font-typewriter text-3xl text-[var(--accent-electric)]">
+                      {ticket.earlyPrice}
+                    </div>
+                  </div>
+                  <div className="mt-2">
+                    <span className="text-xs font-typewriter text-white/50 uppercase tracking-widest block mb-0.5">Late Bird</span>
+                    <div className="font-typewriter text-xl text-white/70">
+                      {ticket.latePrice}
+                    </div>
                   </div>
                 </div>
 
@@ -124,11 +135,14 @@ export default function Register() {
           transition={{ delay: 0.6 }}
           className="text-center mt-12"
         >
+          <p className="text-[var(--accent-electric)]/80 text-sm mb-3">
+            Early Bird pricing valid through March 2026 — prices will rise on April 1, 2026.
+          </p>
           <p className="text-white/50 text-sm mb-3">
             Check{' '}
             <a href="https://luma.com/5746aaa7" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">luma</a>
-            {' '}for all ticket tiers, including{' '}
-            <span className="text-[var(--accent-electric)]">Early Bird Discounts</span>.
+            {' '}for all tickets. If you are a Cal student, check{' '}
+            <a href="https://haas.campusgroups.com/bercathaas/rsvp_boot?id=2251145" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">Campus Groups</a>.
           </p>
           <p className="text-white/50 text-sm">
             Group discounts available for 5+ attendees.{' '}

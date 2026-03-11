@@ -86,7 +86,7 @@ export default function OrganizingTeam() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="flex flex-wrap justify-center gap-3"
+          className="grid grid-cols-3 md:grid-cols-6 gap-3"
         >
           {directors.map((member, index) => (
             <MemberCard key={member.name} member={member} index={index + 2} isInView={isInView} />

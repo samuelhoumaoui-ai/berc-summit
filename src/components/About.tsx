@@ -62,15 +62,15 @@ export default function About() {
             <h3 className="font-typewriter text-2xl md:text-3xl text-[var(--ink-brown)] mb-6 font-semibold">
               Welcome to the Electrocene: Powering the Future, Now!
             </h3>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6 text-justify">
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6">
               Electricity and energy systems will define the next few decades as profoundly as human activity defined the Anthropocene. The Anthropocene asked what humans have done to the planet. The <span className="font-typewriter text-[var(--accent-electric)] font-semibold">Electrocene</span> asks something harder: what will we do next? In this era, energy isn&apos;t just infrastructure — it&apos;s the organizing principle of civilization.
             </p>
             <blockquote className="border-l-4 border-[var(--accent-electric)] pl-6 py-4 my-8">
-              <p className="text-xl md:text-2xl text-[var(--ink-brown)]/90 leading-relaxed italic text-justify">
+              <p className="text-xl md:text-2xl text-[var(--ink-brown)]/90 leading-relaxed italic">
                 In our current epoch, we are introduced to an era in which our energy systems, economy, and society are transforming one another. How we choose to build, power, and utilize these systems is up to us.
               </p>
             </blockquote>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed text-justify">
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
               BERC&apos;s 19th Annual Energy Summit will bring together investors, builders, policy leaders, and academia to explore the many facets and forces defining this era of electricity: from the urgency of firming our power system, to meeting &amp; managing exploding demand, all while serving the ever-pressing needs for affordability, reliability, and equity.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function About() {
                     <h3 className="font-typewriter text-xl text-[var(--ink-brown)] mb-2">
                       {theme.title}
                     </h3>
-                    <p className="text-[var(--ink-brown)]/70 leading-relaxed text-justify">
+                    <p className="text-[var(--ink-brown)]/70 leading-relaxed text-left">
                       {theme.description}
                     </p>
                   </div>
