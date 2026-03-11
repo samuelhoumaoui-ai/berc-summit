@@ -99,12 +99,6 @@ const day2Panels = [
     ],
   },
   {
-    title: 'Building the Electrocene: A Resilient Supply Chain for Critical Minerals',
-    track: 'Policy & Markets',
-    description: 'This panel examines the practical pathways to building more geographically diversified and resilient supply chains: from scaling urban mining and battery recycling to deploying cleaner extraction technologies and mobilizing patient capital. It aims to demystify the industry: what\'s realistic, what\'s overpromised, and where is this industry actually headed?',
-    speakers: [],
-  },
-  {
     title: 'Infrastructure Supercycle: A Capital Markets Update',
     track: 'Policy & Markets',
     description: 'In this era of the Electrocene, electricity demand is accelerating, driven by AI, data center expansion, electrification, and industrial growth. Meeting this surge requires unprecedented investment in large-scale energy infrastructure. How is capital flowing across growth, infrastructure, and platform phases to finance what gets built? This panel brings together investors and a late-stage operator to examine how markets are responding to policy shifts, rising load, and the need to balance reliability, affordability, and decarbonization.',

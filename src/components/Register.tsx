@@ -9,8 +9,8 @@ import Image from 'next/image';
 const tickets = [
   {
     type: 'Student',
-    earlyPrice: '$45',
-    latePrice: '$65',
+    earlyPrice: '$50',
+    latePrice: '$60',
     icon: GraduationCap,
     features: [
       'Two-day access (April 20 & 22)',
@@ -22,8 +22,8 @@ const tickets = [
   },
   {
     type: 'Professional',
-    earlyPrice: '$150',
-    latePrice: '$180',
+    earlyPrice: '$75',
+    latePrice: '$100',
     icon: Users,
     features: [
       'Two-day access (April 20 & 22)',
