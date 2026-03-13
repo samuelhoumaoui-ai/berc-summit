@@ -46,7 +46,13 @@ const headlineSpeakers = [
   { name: 'David Hochschild', title: 'Chair of the California Energy Commission', image: '/images/Headline Speakers/David Hochschild.jpg', imagePosition: 'center 30%' },
   { name: 'Sarah Jewett', title: 'Vice President of Strategy at Fervo Energy', image: '/images/Headline Speakers/Sarah Jewett.jpg', imagePosition: 'center center' },
   { name: 'Gerard Reid', title: 'Host of the Redefining Energy Podcast & Co-Founder of Alexa Capital', image: '/images/Headline Speakers/Gerard Reid.jpg', imagePosition: 'center center' },
-  { name: 'Ryan Wiser', title: 'Senior Scientist & Senior Advisor, Lawrence Berkeley National Laboratory', image: '/images/Headline Speakers/Ryan Wiser.jpg', imagePosition: 'center center' },
+];
+
+const keynotePresentations = [
+  {
+    title: 'The State of U.S. Electricity Prices',
+    speaker: { name: 'Ryan Wiser', title: 'Senior Scientist & Senior Advisor, Lawrence Berkeley National Laboratory', image: '/images/Headline Speakers/Ryan Wiser.jpg', imagePosition: 'center center' },
+  },
 ];
 
 const day2Panels = [
@@ -335,6 +341,43 @@ export default function Agenda() {
                     </h4>
                     <p className="text-xs text-[var(--text-gray)] leading-snug">
                       {speaker.title}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Keynote Presentations */}
+            <div className="mb-12">
+              <h3 className="font-typewriter text-2xl text-[var(--text-white)] mb-6 text-center">
+                Keynote Presentations
+              </h3>
+              <div className="flex justify-center gap-4">
+                {keynotePresentations.map((keynote, index) => (
+                  <motion.div
+                    key={keynote.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 * index }}
+                    className="vintage-border bg-[var(--gray-light)]/50 p-6 text-center w-64"
+                  >
+                    <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 relative border-2 border-[var(--accent-electric)]/30">
+                      <Image
+                        src={keynote.speaker.image}
+                        alt={keynote.speaker.name}
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: keynote.speaker.imagePosition }}
+                      />
+                    </div>
+                    <h4 className="font-typewriter text-base text-[var(--text-white)] mb-1">
+                      {keynote.speaker.name}
+                    </h4>
+                    <p className="text-xs text-[var(--text-gray)] leading-snug mb-3">
+                      {keynote.speaker.title}
+                    </p>
+                    <p className="font-typewriter text-sm text-[var(--accent-electric)] italic">
+                      {keynote.title}
                     </p>
                   </motion.div>
                 ))}
