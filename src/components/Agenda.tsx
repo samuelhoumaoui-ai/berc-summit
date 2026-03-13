@@ -318,14 +318,14 @@ export default function Agenda() {
               <h3 className="font-typewriter text-2xl text-[var(--text-white)] mb-6 text-center">
                 Headline Speakers
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
                 {headlineSpeakers.map((speaker, index) => (
                   <motion.div
                     key={speaker.name}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * index }}
-                    className="vintage-border bg-[var(--gray-light)]/50 p-6 text-center"
+                    className="vintage-border bg-[var(--gray-light)]/50 p-6 text-center w-64"
                   >
                     <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 relative border-2 border-[var(--accent-electric)]/30">
                       <Image
