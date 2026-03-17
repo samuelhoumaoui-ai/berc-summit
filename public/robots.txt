@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bercsummit2026.com/sitemap.xml
