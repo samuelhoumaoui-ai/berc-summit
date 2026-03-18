@@ -41,6 +41,9 @@ export const metadata: Metadata = {
       "The largest student-run energy conference on the West Coast. April 20 & 22, 2026 at UC Berkeley.",
     images: ["/images/EnergySummitLogo-transp-300x156-2-1.png"],
   },
+  verification: {
+    google: "wk2AZCNN0fycw5JYz3vykqnOOVbuvcpL6PKJaHzUQfo",
+  },
   robots: {
     index: true,
     follow: true,
