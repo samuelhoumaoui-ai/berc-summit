@@ -8,9 +8,35 @@ import Image from 'next/image';
 
 const tracks = ['All', 'Grid & Infrastructure', 'AI & Energy', 'Policy & Markets'];
 
-const day1Sessions = [
+const day1Schedule = [
   {
-    title: 'Financing the Energy Transition: How Project Finance Determines What Gets Built',
+    time: '8:30 – 9:00 AM',
+    type: 'break' as const,
+    title: 'Registration',
+    track: null,
+    description: '',
+    speakers: [],
+  },
+  {
+    time: '9:10 – 9:30 AM',
+    type: 'keynote' as const,
+    title: 'Opening Keynote: Welcome to the Electrocene',
+    track: null,
+    description: '',
+    speakers: [],
+  },
+  {
+    time: '9:30 – 10:00 AM',
+    type: 'fireside' as const,
+    title: 'Fireside Chat: Financing the Next Wave of Energy Infrastructure',
+    track: null,
+    description: 'In conversation with Sage Geosystems, hosted by Node.',
+    speakers: [],
+  },
+  {
+    time: '10:00 – 11:00 AM',
+    type: 'workshop' as const,
+    title: 'Workshop 1: Project Finance — How Project Finance Determines What Gets Built',
     track: 'Policy & Markets',
     description: 'Equip attendees with a practical understanding of how project finance works for renewable energy projects—how debt is sized, how lenders assess risk, and how financial structures determine whether a project is viable.',
     speakers: [
@@ -18,7 +44,9 @@ const day1Sessions = [
     ],
   },
   {
-    title: 'PPAs in Practice: Behind-the-Meter vs. Front-of-Meter PPAs',
+    time: '11:00 AM – 12:00 PM',
+    type: 'workshop' as const,
+    title: 'Workshop 2: PPAs in Practice — Behind-the-Meter vs. Front-of-Meter PPAs',
     track: 'Policy & Markets',
     description: 'Enable participants to evaluate and compare behind-the-meter and front-of-meter PPAs by understanding the tradeoffs in revenue certainty, risk allocation, and financing implications across different project structures.',
     speakers: [
@@ -26,18 +54,52 @@ const day1Sessions = [
     ],
   },
   {
-    title: 'Interconnection',
+    time: '12:00 – 1:00 PM',
+    type: 'break' as const,
+    title: 'Lunch & Networking',
+    track: null,
+    description: '',
+    speakers: [],
+  },
+  {
+    time: '1:00 – 2:00 PM',
+    type: 'workshop' as const,
+    title: 'Workshop 3: Financing the Energy Transition — Impact Measurement and Diligence',
+    track: 'Policy & Markets',
+    description: 'This workshop covers impact measurement in the energy transition, including methodologies to model avoided emissions, assess resilience and reliability, and determine a company\'s net impact. Participants will evaluate the products and services of complex companies to assess whether they meaningfully advance decarbonization or are not fit for purpose. The workshop is facilitated by an impact professional from Energy Impact Partners, a global energy technology investor with a proprietary model designed to drive innovation in the energy industry.',
+    speakers: [
+      { name: 'Natàlia Costa i Coromina', title: 'Sr. Associate, Impact, Energy Impact Partners' },
+    ],
+  },
+  {
+    time: '2:00 – 3:00 PM',
+    type: 'workshop' as const,
+    title: 'Workshop 4: Interconnection — Unlocking the Grid Expansion',
     track: 'Grid & Infrastructure',
     description: 'Give participants a practical, end-to-end understanding of the interconnection process, why timelines have exploded, and what emerging regulatory, technological, and market reforms could unlock faster grid expansion — with a special focus on new AI-driven load growth.',
     speakers: [],
   },
   {
-    title: 'Data Centers - The Energy Problem',
+    time: '3:00 – 4:00 PM',
+    type: 'workshop' as const,
+    title: 'Workshop 5: Data Centers — The Energy Problem',
     track: 'AI & Energy',
     description: 'What are the unique challenges AI data centers pose for the US electric grid, how developers and utilities evaluate sites, and what emerging clean energy solutions could sustainably power AI\'s massive load growth.',
     speakers: [
       { name: 'Luis Gonzalez', title: 'Microsoft' },
       { name: 'Nehali Jain', title: 'Antora Energy' },
+      { name: 'PG&E', title: '' },
+    ],
+  },
+  {
+    time: '4:00 – 4:30 PM',
+    type: 'closing' as const,
+    title: 'Closing Fireside Chat: Blending Expertise in Pursuit of the Clean Energy Transition',
+    track: null,
+    description: 'Closing conversation on how diverse expertise—from venture investing to policy and the built environment—can come together to accelerate the clean energy transition. This fireside chat will explore how cross-sector collaboration is unlocking scalable climate solutions, the role of capital in driving innovation, and what it takes to turn ambitious climate goals into real-world impact.',
+    speakers: [
+      { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures' },
+      { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition' },
     ],
   },
 ];
@@ -147,9 +209,9 @@ export default function Agenda() {
   const [activeTrack, setActiveTrack] = useState('All');
   const [expandedSession, setExpandedSession] = useState<string | null>(null);
 
-  const filteredDay1 = activeTrack === 'All' 
-    ? day1Sessions 
-    : day1Sessions.filter(s => s.track === activeTrack);
+  const filteredDay1 = activeTrack === 'All'
+    ? day1Schedule
+    : day1Schedule.filter(s => s.track === null || s.track === activeTrack);
 
   const filteredDay2Panels = activeTrack === 'All' 
     ? day2Panels 
@@ -235,73 +297,115 @@ export default function Agenda() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4 }}
           >
-            <h3 className="font-typewriter text-2xl text-[var(--text-white)] mb-6 text-center">
-              Workshops
-            </h3>
-            <div className="space-y-4">
-              {filteredDay1.map((session, index) => (
-                <motion.div
-                  key={session.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.1 * index }}
-                  className="vintage-border bg-[var(--gray-light)]/50 hover:bg-[var(--gray-light)]/70 transition-all cursor-pointer"
-                  onClick={() => setExpandedSession(expandedSession === session.title ? null : session.title)}
-                >
-                  <div className="p-4 md:p-6">
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <span className="text-xs px-2 py-1 bg-[var(--accent-electric)]/20 text-[var(--accent-electric)] rounded">
-                        {session.track}
+            <div className="space-y-3">
+              {filteredDay1.map((item, index) => {
+                const isBreak = item.type === 'break';
+                const isExpandable = !isBreak && (item.description || item.speakers.length > 0);
+                const isExpanded = expandedSession === item.title;
+
+                if (isBreak) {
+                  return (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.05 * index }}
+                      className="flex items-center gap-4 px-4 py-3 border border-[var(--text-gray)]/15 bg-[var(--gray-dark)]/40"
+                    >
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        <Clock className="w-3 h-3 text-[var(--text-gray)]/50" />
+                        <span className="font-typewriter text-xs text-[var(--text-gray)]/60 whitespace-nowrap">
+                          {item.time}
+                        </span>
+                      </div>
+                      <div className="h-px flex-1 bg-[var(--text-gray)]/15" />
+                      <span className="font-typewriter text-sm text-[var(--text-gray)]/70 tracking-wider uppercase whitespace-nowrap">
+                        {item.title}
                       </span>
-                      <button className="text-[var(--text-gray)]">
-                        {expandedSession === session.title ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-                      </button>
-                    </div>
-                    
-                    <h3 className="font-typewriter text-lg md:text-xl text-[var(--text-white)] mb-2">
-                      {session.title}
-                    </h3>
-                    
-                    {expandedSession === session.title && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        className="mt-4 border-t border-[var(--text-gray)]/20 pt-4"
-                      >
-                        <p className="text-[var(--text-gray)] leading-relaxed mb-4">
-                          {session.description}
-                        </p>
-                        {session.speakers.length > 0 && (
-                          <div>
-                            <h4 className="font-typewriter text-sm text-[var(--accent-electric)] uppercase tracking-wider mb-3">
-                              Speakers
-                            </h4>
-                            <div className="space-y-2">
-                              {session.speakers.map((speaker) => (
-                                <div key={speaker.name} className="flex items-center gap-3">
-                                  <div className="w-8 h-8 rounded-full bg-[var(--accent-electric)]/20 flex items-center justify-center flex-shrink-0">
-                                    <User className="w-4 h-4 text-[var(--accent-electric)]" />
-                                  </div>
-                                  <div>
-                                    <span className="text-[var(--text-white)] font-medium">{speaker.name}</span>
-                                    <span className="text-[var(--text-gray)] text-sm"> — {speaker.title}</span>
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
+                      <div className="h-px flex-1 bg-[var(--text-gray)]/15" />
+                    </motion.div>
+                  );
+                }
+
+                return (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.05 * index }}
+                    className={`vintage-border bg-[var(--gray-light)]/50 transition-all ${isExpandable ? 'hover:bg-[var(--gray-light)]/70 cursor-pointer' : ''}`}
+                    onClick={() => isExpandable && setExpandedSession(isExpanded ? null : item.title)}
+                  >
+                    <div className="p-4 md:p-6">
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <div className="flex items-center gap-3 flex-wrap">
+                          <div className="flex items-center gap-1.5">
+                            <Clock className="w-3 h-3 text-[var(--text-gray)]/60" />
+                            <span className="font-typewriter text-xs text-[var(--text-gray)]/70 whitespace-nowrap">
+                              {item.time}
+                            </span>
                           </div>
+                          {item.track && (
+                            <span className="text-xs px-2 py-1 bg-[var(--accent-electric)]/20 text-[var(--accent-electric)] rounded">
+                              {item.track}
+                            </span>
+                          )}
+                          {(item.type === 'keynote' || item.type === 'fireside' || item.type === 'closing') && (
+                            <span className="text-xs px-2 py-1 bg-[var(--text-gray)]/10 text-[var(--text-gray)] rounded">
+                              {item.type === 'keynote' ? 'Keynote' : item.type === 'fireside' ? 'Fireside Chat' : 'Closing'}
+                            </span>
+                          )}
+                        </div>
+                        {isExpandable && (
+                          <button className="text-[var(--text-gray)] flex-shrink-0">
+                            {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                          </button>
                         )}
-                      </motion.div>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-              
-              <div className="text-center py-8">
-                <p className="font-typewriter text-[var(--accent-electric)] text-lg italic">
-                  And more to come!
-                </p>
-              </div>
+                      </div>
+
+                      <h3 className="font-typewriter text-lg md:text-xl text-[var(--text-white)] mb-2">
+                        {item.title}
+                      </h3>
+
+                      {isExpanded && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          className="mt-4 border-t border-[var(--text-gray)]/20 pt-4"
+                        >
+                          {item.description && (
+                            <p className="text-[var(--text-gray)] leading-relaxed mb-4">
+                              {item.description}
+                            </p>
+                          )}
+                          {item.speakers.length > 0 && (
+                            <div>
+                              <h4 className="font-typewriter text-sm text-[var(--accent-electric)] uppercase tracking-wider mb-3">
+                                Speakers
+                              </h4>
+                              <div className="space-y-2">
+                                {item.speakers.map((speaker) => (
+                                  <div key={speaker.name} className="flex items-center gap-3">
+                                    <div className="w-8 h-8 rounded-full bg-[var(--accent-electric)]/20 flex items-center justify-center flex-shrink-0">
+                                      <User className="w-4 h-4 text-[var(--accent-electric)]" />
+                                    </div>
+                                    <div>
+                                      <span className="text-[var(--text-white)] font-medium">{speaker.name}</span>
+                                      {speaker.title && (
+                                        <span className="text-[var(--text-gray)] text-sm"> — {speaker.title}</span>
+                                      )}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </motion.div>
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
         )}
