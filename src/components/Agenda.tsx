@@ -36,7 +36,7 @@ const day1Schedule = [
   {
     time: '10:00 – 11:00 AM',
     type: 'workshop' as const,
-    title: 'Workshop 1: Project Finance — How Project Finance Determines What Gets Built',
+    title: 'Workshop: Project Finance — How Project Finance Determines What Gets Built',
     track: 'Policy & Markets',
     description: 'Equip attendees with a practical understanding of how project finance works for renewable energy projects—how debt is sized, how lenders assess risk, and how financial structures determine whether a project is viable.',
     speakers: [
@@ -46,7 +46,7 @@ const day1Schedule = [
   {
     time: '11:00 AM – 12:00 PM',
     type: 'workshop' as const,
-    title: 'Workshop 2: PPAs in Practice — Behind-the-Meter vs. Front-of-Meter PPAs',
+    title: 'Workshop: PPAs in Practice — Behind-the-Meter vs. Front-of-Meter PPAs',
     track: 'Policy & Markets',
     description: 'Enable participants to evaluate and compare behind-the-meter and front-of-meter PPAs by understanding the tradeoffs in revenue certainty, risk allocation, and financing implications across different project structures.',
     speakers: [
@@ -64,7 +64,7 @@ const day1Schedule = [
   {
     time: '1:00 – 2:00 PM',
     type: 'workshop' as const,
-    title: 'Workshop 3: Financing the Energy Transition — Impact Measurement and Diligence',
+    title: 'Workshop: Financing the Energy Transition — Impact Measurement and Diligence',
     track: 'Policy & Markets',
     description: 'This workshop covers impact measurement in the energy transition, including methodologies to model avoided emissions, assess resilience and reliability, and determine a company\'s net impact. Participants will evaluate the products and services of complex companies to assess whether they meaningfully advance decarbonization or are not fit for purpose. The workshop is facilitated by an impact professional from Energy Impact Partners, a global energy technology investor with a proprietary model designed to drive innovation in the energy industry.',
     speakers: [
@@ -74,7 +74,7 @@ const day1Schedule = [
   {
     time: '2:00 – 3:00 PM',
     type: 'workshop' as const,
-    title: 'Workshop 4: Interconnection — Unlocking the Grid Expansion',
+    title: 'Workshop: Interconnection — Unlocking the Grid Expansion',
     track: 'Grid & Infrastructure',
     description: 'Give participants a practical, end-to-end understanding of the interconnection process, why timelines have exploded, and what emerging regulatory, technological, and market reforms could unlock faster grid expansion — with a special focus on new AI-driven load growth.',
     speakers: [],
@@ -82,7 +82,7 @@ const day1Schedule = [
   {
     time: '3:00 – 4:00 PM',
     type: 'workshop' as const,
-    title: 'Workshop 5: Data Centers — The Energy Problem',
+    title: 'Workshop: Data Centers — The Energy Problem',
     track: 'AI & Energy',
     description: 'What are the unique challenges AI data centers pose for the US electric grid, how developers and utilities evaluate sites, and what emerging clean energy solutions could sustainably power AI\'s massive load growth.',
     speakers: [
