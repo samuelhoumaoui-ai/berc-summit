@@ -175,12 +175,13 @@ const day2Panels = [
     ],
   },
   {
-    title: 'Metals & Minerals of the Electrocene',
+    title: 'Building the Electrocene: A Resilient Supply Chain for Critical Minerals',
     track: 'Policy & Markets',
-    description: 'Exploring what it takes to build the supply chains required for reliable, electrified energy systems from the perspective of investors and entrepreneurs.',
+    description: 'Metals & Minerals of the Electrocene explores the critical role of materials supply chains in enabling 24/7 clean energy reliability - from firm power and grid infrastructure to electrification at scale. As the U.S. accelerates reshoring and domestic capacity-building across mining, processing, and advanced manufacturing, investors and entrepreneurs are navigating both strategic opportunity and geopolitical constraint. This panel will examine how capital, innovation, and industrial policy are converging to build resilient, secure, and scalable domestic supply chains for the next era of energy.',
     speakers: [
       { name: 'Melissa Zhang', title: 'Principal, Azimuth Capital Management' },
       { name: 'Leonardo Banchik, PhD', title: 'Director, Voyager Ventures' },
+      { name: 'Dave Snydacker', title: 'Founder and CTO, Lilac Solutions' },
     ],
   },
   {

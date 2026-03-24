@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "berc-summit",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["next", "dev"],
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "--webpack"],
       "port": 3000
     }
   ]

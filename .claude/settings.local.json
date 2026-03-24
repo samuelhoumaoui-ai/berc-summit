@@ -16,7 +16,18 @@
       "Bash(__NEW_LINE_6dba5ff26a6994de__ ls -lh /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/)",
       "Bash(file /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/*.png)",
       "Bash(file /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/public/images/sponsors/*.svg)",
-      "Bash(open http://localhost:3000)"
+      "Bash(open http://localhost:3000)",
+      "WebFetch(domain:berc-summit.vercel.app)",
+      "Bash(npm install @vercel/analytics)",
+      "Bash(git push origin main)",
+      "Read(//usr/local/bin/**)",
+      "Bash(/usr/local/bin/node /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/node_modules/next/dist/bin/next dev --help)",
+      "Bash(grep -r \"bercsummit\\\\|electrocene\\\\|berc-summit\\\\|domain\\\\|siteUrl\\\\|NEXT_PUBLIC\" /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/package.json /Users/samuelhoumaoui/Desktop/Crusoe/Summit/berc-summit/.env*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://bercsummit2026.com/googled8c91b67b5d224c5.html)",
+      "Bash(curl -s https://bercsummit2026.com/googled8c91b67b5d224c5.html)",
+      "Bash(curl -s https://bercsummit2026.com)"
     ]
   }
 }
