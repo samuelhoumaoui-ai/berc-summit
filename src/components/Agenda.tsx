@@ -197,10 +197,12 @@ const day2Panels = [
   {
     title: 'Unplugged: Global Energy Policy Realignment in the Electrocene',
     track: 'Policy & Markets',
-    description: 'In the midst of global realignment and turbulence, how are countries reassessing their energy strategies to address the urgent issues of energy sovereignty, affordability, and decarbonization. This panel takes a deep dive into how China and India are approaching the Electrocene.',
+    description: 'In the midst of global realignment and turbulence, how are countries reassessing their energy strategies to address the urgent issues of energy sovereignty, affordability, and decarbonization. This panel takes a deep dive into how China, India, and the UK are approaching the Electrocene.',
     speakers: [
       { name: 'Fan Dai', title: 'Co-founder of UC Berkeley California-China Climate Institute' },
       { name: 'Nikit Abhyankar', title: 'Co-Faculty Director, India Energy & Climate Center' },
+      { name: 'Rachel Kyte', title: 'UK Special Representative for Climate' },
+      { name: 'Sarah Brady', title: 'Director of the California Energy Commission Office of Governmental and International Affairs' },
     ],
   },
 ];
