@@ -87,15 +87,15 @@ export default function Register() {
                     {ticket.type}
                   </h3>
                   <div className="mb-1">
-                    <span className="text-xs font-typewriter text-[var(--accent-electric)] uppercase tracking-widest block mb-0.5">Early Bird</span>
+                    <span className="text-xs font-typewriter text-[var(--accent-electric)] uppercase tracking-widest block mb-0.5">Late Bird</span>
                     <div className="font-typewriter text-3xl text-[var(--accent-electric)]">
-                      {ticket.earlyPrice}
+                      {ticket.latePrice}
                     </div>
                   </div>
                   <div className="mt-2">
-                    <span className="text-xs font-typewriter text-white/50 uppercase tracking-widest block mb-0.5">Late Bird</span>
+                    <span className="text-xs font-typewriter text-white/50 uppercase tracking-widest block mb-0.5">Early Bird</span>
                     <div className="font-typewriter text-xl text-white/70">
-                      {ticket.latePrice}
+                      {ticket.earlyPrice}
                     </div>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Register() {
           className="text-center mt-12"
         >
           <p className="text-[var(--accent-electric)]/80 text-sm mb-3">
-            Early Bird pricing valid through March 2026 — prices will rise on April 1, 2026.
+            Late Bird pricing now in effect.
           </p>
           <p className="text-white/50 text-sm mb-3">
             Check{' '}
