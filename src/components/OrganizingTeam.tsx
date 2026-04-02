@@ -18,6 +18,8 @@ const directors = [
   { name: 'Lukin (Louie) Jacobs', role: 'Director of Headline Speakers', image: '/images/OrgTeam/Lukin Jacob.jpeg' },
   { name: 'Patricia Nader', role: 'Director of Workshops', image: '/images/OrgTeam/Patricia Nader.jpeg' },
   { name: 'Frances Swanson', role: 'Director of Content', image: '/images/OrgTeam/Frances Swanson.jpeg' },
+  { name: 'Delany Broome', role: 'Director of Logistics', image: '/images/OrgTeam/Delany Broome.jpg' },
+  { name: 'Jonathan Zou', role: 'Director of Logistics', image: '/images/OrgTeam/Jonathan Zou.jpg' },
 ];
 
 const MemberCard = ({ member, index, isInView, large = false }: {

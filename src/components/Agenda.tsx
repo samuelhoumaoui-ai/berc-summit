@@ -111,7 +111,7 @@ const day1Schedule = [
 
 const headlineSpeakers = [
   { name: 'David Hochschild', title: 'Chair of the California Energy Commission', image: '/images/Headline Speakers/David Hochschild.jpg', imagePosition: 'center 30%' },
-  { name: 'Sarah Jewett', title: 'Vice President of Strategy at Fervo Energy', image: '/images/Headline Speakers/Sarah Jewett.jpg', imagePosition: 'center center' },
+  { name: 'Sarah Jewett', title: 'Vice President of Strategy at Fervo Energy', image: '/images/Headline Speakers/Sarah Jewett_Headshot_Cape.jpg', imagePosition: 'center center' },
   { name: 'Gerard Reid', title: 'Host of the Redefining Energy Podcast & Co-Founder of Alexa Capital', image: '/images/Headline Speakers/Gerard Reid.jpg', imagePosition: 'center center' },
 ];
 
