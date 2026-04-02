@@ -23,7 +23,9 @@ const day1Schedule = [
     title: 'Opening Keynote: Welcome to the Electrocene',
     track: null,
     description: '',
-    speakers: [],
+    speakers: [
+      { name: 'Amaani Hamid', title: 'Head of Flexibility as a Service, Octopus Energy' },
+    ],
   },
   {
     time: '9:30 – 10:00 AM',
@@ -31,7 +33,10 @@ const day1Schedule = [
     title: 'Fireside Chat: Financing the Next Wave of Energy Infrastructure',
     track: null,
     description: 'In conversation with Sage Geosystems, hosted by Node.',
-    speakers: [],
+    speakers: [
+      { name: 'Jack Fritzinger', title: 'Founder, Node' },
+      { name: 'Jason Peart', title: 'COO, Sage Geosystems' },
+    ],
   },
   {
     time: '10:00 – 11:00 AM',
@@ -159,11 +164,14 @@ const day2Panels = [
     ],
   },
   {
-    title: 'Capacity for Tomorrow: Storage and the Infrastructure Tradeoff',
+    title: 'Capacity for Tomorrow: Storage, Transmission, and the Infrastructure Tradeoff',
     track: 'Grid & Infrastructure',
     description: 'This panel brings together companies on both sides of energy storage and demand: those deploying storage solutions and those facing capacity constraints. We\'ll explore why different technologies get built, what load profiles and technoeconomics drive those choices, and whether storage is genuinely solving capacity shortage or substituting for transmission infrastructure we should be building instead.',
     speakers: [
-      { name: 'Jonathan Lesh', title: 'Finance, Antora' },
+      { name: 'Jonathan Lesh', title: 'Project Finance Associate, Antora Energy' },
+      { name: 'Suraj Patel', title: 'Senior Manager, Solutions Engineering, Calibrant Energy' },
+      { name: 'Arnaud Paquet', title: 'Senior Manager, Energy & Infrastructure Development, Crusoe' },
+      { name: 'Phillipe Phanivong', title: 'Senior Program Manager, Grid Lab (Moderator)' },
     ],
   },
   {
@@ -172,6 +180,8 @@ const day2Panels = [
     description: 'In this era of the Electrocene, electricity demand is accelerating, driven by AI, data center expansion, electrification, and industrial growth. Meeting this surge requires unprecedented investment in large-scale energy infrastructure. How is capital flowing across growth, infrastructure, and platform phases to finance what gets built? This panel brings together investors and a late-stage operator to examine how markets are responding to policy shifts, rising load, and the need to balance reliability, affordability, and decarbonization.',
     speakers: [
       { name: 'Margaret Roddy', title: 'Vice President, TPG Rise Climate' },
+      { name: 'Natalia Costa i Coromina', title: 'Senior Associate, Impact, Energy Impact Partners' },
+      { name: 'Daniel Kriozere', title: 'Moderator' },
     ],
   },
   {
@@ -198,8 +208,18 @@ const day2Panels = [
 const day2EmergingTech = [
   {
     company: 'CalWave',
-    description: "CalWave's mission is to provide reliable, cost-effective ocean wave technologies for secure energy access.",
+    description: "CalWave develops scalable ocean wave energy converters that harness offshore wave power to deliver reliable, cost-effective clean electricity.",
     speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder' },
+  },
+  {
+    company: 'Hammerhead AI',
+    description: "Hammerhead.ai builds AI-native software for grid operators and utilities to transform stranded power in data centers into AI-ready capacity.",
+    speaker: { name: 'Surya Swamy', title: 'Head of Product Strategy', headshot: '/images/Power Hour/Surya headshot final.png' },
+  },
+  {
+    company: 'Kairos Power',
+    description: "Kairos Power is commercializing a fluoride salt-cooled high-temperature reactor designed to deliver safe, affordable, and dispatchable clean energy at scale.",
+    speaker: { name: 'Candice Yu', title: 'Director of Business Development', headshot: '/images/Power Hour/Candice Yu.jpeg' },
   },
 ];
 
@@ -556,68 +576,46 @@ export default function Agenda() {
               </div>
             </div>
 
-            {/* Emerging Tech Power Hour */}
+            {/* Emerging Tech Showcase */}
             <div>
               <h3 className="font-typewriter text-2xl text-[var(--text-white)] mb-4 text-center">
-                Emerging Tech Power Hour
+                Emerging Tech Showcase
               </h3>
               <p className="text-[var(--text-gray)] text-base leading-relaxed text-left mb-6">
-                The Emerging Tech Power Hour is a curated showcase featuring 10-minute presentations from early-stage clean energy companies — spanning industrial decarbonization, advanced storage, home electrification, and advanced nuclear. Speakers cover their core technology, founding thesis, and deployment progress to date.
+                The Emerging Tech Showcase is a curated showcase featuring 10-minute presentations from early-stage clean energy companies — spanning industrial decarbonization, advanced storage, home electrification, and advanced nuclear. Speakers cover their core technology, founding thesis, and deployment progress to date.
               </p>
-              {/* CalWave card hidden for now — re-enable by removing the false && condition */}
-              <div className="space-y-4">
-                {false && day2EmergingTech.map((item, index) => (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {day2EmergingTech.map((item, index) => (
                   <motion.div
                     key={item.company}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * index }}
-                    className="vintage-border bg-[var(--gray-light)]/50 hover:bg-[var(--gray-light)]/70 transition-all cursor-pointer"
-                    onClick={() => setExpandedSession(expandedSession === item.company ? null : item.company)}
+                    className="vintage-border bg-[var(--gray-light)]/50 p-5 flex flex-col gap-4"
                   >
-                    <div className="p-4 md:p-6">
-                      <div className="flex items-center justify-between gap-2 mb-2">
-                        <h3 className="font-typewriter text-lg md:text-xl text-[var(--text-white)]">
-                          {item.company}
-                        </h3>
-                        <button className="text-[var(--text-gray)]">
-                          {expandedSession === item.company ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-                        </button>
+                    <div>
+                      <h4 className="font-typewriter text-lg text-[var(--text-white)] mb-2">
+                        {item.company}
+                      </h4>
+                      <p className="text-[var(--text-gray)] text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                    <div className="border-t border-[var(--text-gray)]/20 pt-4 flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full overflow-hidden bg-[var(--accent-electric)]/20 flex items-center justify-center flex-shrink-0">
+                        {item.speaker.headshot ? (
+                          <img src={item.speaker.headshot} alt={item.speaker.name} className="w-full h-full object-cover" />
+                        ) : (
+                          <User className="w-5 h-5 text-[var(--accent-electric)]" />
+                        )}
                       </div>
-
-                      {expandedSession === item.company && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: 'auto' }}
-                          className="mt-4 border-t border-[var(--text-gray)]/20 pt-4"
-                        >
-                          <p className="text-[var(--text-gray)] leading-relaxed mb-4">
-                            {item.description}
-                          </p>
-                          <div>
-                            <h4 className="font-typewriter text-sm text-[var(--accent-electric)] uppercase tracking-wider mb-3">
-                              Speaker
-                            </h4>
-                            <div className="flex items-center gap-3">
-                              <div className="w-8 h-8 rounded-full bg-[var(--accent-electric)]/20 flex items-center justify-center flex-shrink-0">
-                                <User className="w-4 h-4 text-[var(--accent-electric)]" />
-                              </div>
-                              <div>
-                                <span className="text-[var(--text-white)] font-medium">{item.speaker.name}</span>
-                                <span className="text-[var(--text-gray)] text-sm"> — {item.speaker.title}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </motion.div>
-                      )}
+                      <div>
+                        <p className="text-[var(--text-white)] font-medium text-sm">{item.speaker.name}</p>
+                        <p className="text-[var(--text-gray)] text-xs">{item.speaker.title}</p>
+                      </div>
                     </div>
                   </motion.div>
                 ))}
-              </div>
-              <div className="text-center py-8">
-                <p className="font-typewriter text-[var(--accent-electric)] text-lg italic">
-                  More to come!
-                </p>
               </div>
             </div>
           </motion.div>
