@@ -181,7 +181,7 @@ const day2Panels = [
     speakers: [
       { name: 'Margaret Roddy', title: 'Vice President, TPG Rise Climate' },
       { name: 'Natalia Costa i Coromina', title: 'Senior Associate, Impact, Energy Impact Partners' },
-      { name: 'Daniel Kriozere', title: 'Moderator' },
+      { name: 'Daniel Kriozere', title: 'Director, Capital and Strategic Partnerships, Venture for ClimateTech (Moderator)' },
     ],
   },
   {
