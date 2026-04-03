@@ -77,11 +77,13 @@ export default function OrganizingTeam() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 gap-3 max-w-xs mx-auto mb-6"
+          className="grid grid-cols-4 gap-3 mb-6"
         >
+          <div />
           {coVPs.map((member, index) => (
             <MemberCard key={member.name} member={member} index={index} isInView={isInView} className="w-full" />
           ))}
+          <div />
         </motion.div>
 
         {/* Directors rows (4 + 4) */}
