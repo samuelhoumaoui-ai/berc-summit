@@ -22,18 +22,19 @@ const directors = [
   { name: 'Jonathan Zou', role: 'Director of Logistics', image: '/images/OrgTeam/Jonathan Zou.jpg' },
 ];
 
-const MemberCard = ({ member, index, isInView, large = false }: {
+const MemberCard = ({ member, index, isInView, large = false, className = '' }: {
   member: { name: string; role: string; image: string };
   index: number;
   isInView: boolean;
   large?: boolean;
+  className?: string;
 }) => (
   <motion.div
     key={member.name}
     initial={{ opacity: 0, y: 10 }}
     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
     transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
-    className={`bg-[var(--teal-light)]/40 border border-[var(--accent-cyan)]/10 p-4 text-center rounded-sm ${large ? 'w-44' : 'w-36'}`}
+    className={`bg-[var(--teal-light)]/40 border border-[var(--accent-cyan)]/10 p-4 text-center rounded-sm ${large ? 'w-44' : ''} ${className}`}
   >
     <div className={`${large ? 'w-20 h-20' : 'w-16 h-16'} rounded-full overflow-hidden mx-auto mb-2 relative`}>
       <Image
@@ -43,10 +44,10 @@ const MemberCard = ({ member, index, isInView, large = false }: {
         className="object-cover"
       />
     </div>
-    <h3 className={`font-typewriter ${large ? 'text-base' : 'text-sm'} text-[var(--text-white)] mb-0.5 truncate`}>
+    <h3 className={`font-typewriter ${large ? 'text-base' : 'text-sm'} text-[var(--text-white)] mb-0.5 leading-tight`}>
       {member.name}
     </h3>
-    <p className={`${large ? 'text-sm' : 'text-xs'} text-[var(--text-gray)] truncate`}>
+    <p className={`${large ? 'text-sm' : 'text-xs'} text-[var(--text-gray)] leading-tight`}>
       {member.role}
     </p>
   </motion.div>
@@ -83,15 +84,15 @@ export default function OrganizingTeam() {
           ))}
         </motion.div>
 
-        {/* Directors row */}
+        {/* Directors rows (4 + 4) */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="grid grid-cols-3 md:grid-cols-6 gap-3"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3"
         >
           {directors.map((member, index) => (
-            <MemberCard key={member.name} member={member} index={index + 2} isInView={isInView} />
+            <MemberCard key={member.name} member={member} index={index + 2} isInView={isInView} className="w-full" />
           ))}
         </motion.div>
       </div>
