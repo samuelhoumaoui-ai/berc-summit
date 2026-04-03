@@ -136,13 +136,9 @@ export default function Register() {
           className="text-center mt-12"
         >
           <p className="text-[var(--accent-electric)]/80 text-sm mb-3">
-            Late Bird pricing now in effect.
-          </p>
-          <p className="text-white/50 text-sm mb-3">
-            Check{' '}
+            Late Bird pricing now in effect. Check{' '}
             <a href="https://luma.com/electrocene" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">luma</a>
-            {' '}for all tickets. If you are a Cal student, check{' '}
-            <a href="https://haas.campusgroups.com/bercathaas/rsvp_boot?id=2251145" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-electric)] hover:underline">Campus Groups</a>.
+            {' '}for all tickets.
           </p>
           <p className="text-white/50 text-sm">
             Group discounts available for 5+ attendees.{' '}
