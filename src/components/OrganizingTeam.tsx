@@ -77,10 +77,10 @@ export default function OrganizingTeam() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center gap-4 mb-6"
+          className="grid grid-cols-2 gap-3 max-w-xs mx-auto mb-6"
         >
           {coVPs.map((member, index) => (
-            <MemberCard key={member.name} member={member} index={index} isInView={isInView} />
+            <MemberCard key={member.name} member={member} index={index} isInView={isInView} className="w-full" />
           ))}
         </motion.div>
 
