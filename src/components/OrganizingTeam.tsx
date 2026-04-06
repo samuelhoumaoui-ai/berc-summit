@@ -20,6 +20,7 @@ const directors = [
   { name: 'Frances Swanson', role: 'Director of Content', image: '/images/OrgTeam/Frances Swanson.jpeg' },
   { name: 'Delany Broome', role: 'Director of Logistics', image: '/images/OrgTeam/Delany Broome.jpg' },
   { name: 'Jonathan Zou', role: 'Director of Logistics', image: '/images/OrgTeam/Jonathan Zou.jpg' },
+  { name: 'Aurelia Heitz', role: 'Director of Logistics', image: '/images/OrgTeam/Aurelia.jpg' },
 ];
 
 const MemberCard = ({ member, index, isInView, large = false, className = '' }: {
@@ -41,7 +42,7 @@ const MemberCard = ({ member, index, isInView, large = false, className = '' }: 
         src={member.image}
         alt={member.name}
         fill
-        className="object-cover"
+        className="object-cover grayscale"
       />
     </div>
     <h3 className={`font-typewriter ${large ? 'text-base' : 'text-sm'} text-[var(--text-white)] mb-0.5 leading-tight`}>
