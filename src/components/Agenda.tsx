@@ -24,7 +24,7 @@ const day1Schedule = [
     track: null,
     description: '',
     speakers: [
-      { name: 'Amaani Hamid', title: 'Head of Flexibility as a Service, Octopus Energy' },
+      { name: 'Amaani Hamid', title: 'Head of Flexibility as a Service, Octopus Energy', headshot: '/images/Headline Speakers/Amaani Hamid.jpg' },
     ],
   },
   {
@@ -103,8 +103,8 @@ const day1Schedule = [
     track: null,
     description: 'Closing conversation on how diverse expertise—from venture investing to policy and the built environment—can come together to accelerate the clean energy transition. This fireside chat will explore how cross-sector collaboration is unlocking scalable climate solutions, the role of capital in driving innovation, and what it takes to turn ambitious climate goals into real-world impact.',
     speakers: [
-      { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures' },
-      { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition' },
+      { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures', headshot: '/images/Headline Speakers/Elaine Hseih.jpg' },
+      { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition', headshot: '/images/Headline Speakers/Panama Bartholomy.jpg' },
     ],
   },
 ];
@@ -202,6 +202,7 @@ const day2Schedule: Day2Item[] = [
         speakers: [
           { name: 'Liane Randolph', title: 'Former Chair of the California Air Resources Board & California Public Utilities Commissioner' },
           { name: 'Andrew Spurling', title: 'Director of Development, White Pine Renewables' },
+          { name: 'Jin Noh', title: 'Associate Director, Business Development, West, EDF Renewables' },
         ],
       },
     ],
@@ -400,7 +401,7 @@ const day2EmergingTech = [
   {
     company: 'CalWave',
     description: "CalWave develops scalable ocean wave energy converters that harness offshore wave power to deliver reliable, cost-effective clean electricity.",
-    speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder' },
+    speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder', headshot: '/images/Headline Speakers/Marcus Lehmann.jpg' },
   },
   {
     company: 'Hammerhead AI',
