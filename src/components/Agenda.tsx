@@ -310,7 +310,6 @@ const day2Schedule: Day2Item[] = [
         speakers: [
           { name: 'Jonathan Lesh', title: 'Project Finance Associate, Antora Energy' },
           { name: 'Suraj Patel', title: 'Senior Manager, Solutions Engineering, Calibrant Energy' },
-          { name: 'Arnaud Paquet', title: 'Senior Manager, Energy & Infrastructure Development, Crusoe' },
           { name: 'Phillipe Phanivong', title: 'Senior Program Manager, Grid Lab (Moderator)' },
         ],
       },
@@ -381,8 +380,10 @@ const day2Schedule: Day2Item[] = [
   },
   {
     time: '5:15 – 5:30 PM',
-    type: 'break',
-    title: 'Closing Remarks',
+    type: 'speaker',
+    title: 'Mark Rohan',
+    speakerTitle: 'Chief of Staff, Heron Power',
+    speakerSubtitle: 'Closing Remarks',
     track: null,
     description: '',
     speakers: [],
