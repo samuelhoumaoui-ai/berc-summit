@@ -10,7 +10,7 @@ const sponsorTiers = [
     tier: 'Gold',
     sponsors: [
       { name: 'PG&E', logo: '/images/sponsors/pge.svg' },
-      { name: 'EDF (Energie de France)', logo: '/images/sponsors/edf.svg' },
+      { name: 'EDF (Électricité de France)', logo: '/images/sponsors/edf.svg' },
     ],
   },
   {
@@ -28,6 +28,7 @@ const sponsorTiers = [
       { name: 'InterAmerican Clean Energy Institute', logo: '/images/sponsors/iace.svg' },
       { name: 'Bakar Labs for Energy & Materials', logo: '/images/sponsors/bakar-labs.svg' },
       { name: 'Norton Rose Fulbright', logo: '/images/sponsors/norton-rose.svg' },
+      { name: 'MCE', logo: '/images/sponsors/mce.svg' },
     ],
   },
 ];

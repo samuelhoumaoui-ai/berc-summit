@@ -99,7 +99,7 @@ const day1Schedule = [
   {
     time: '4:00 – 4:30 PM',
     type: 'closing' as const,
-    title: 'Closing Fireside Chat: Blending Expertise in Pursuit of the Clean Energy Transition',
+    title: 'Closing Fireside Chat: How Systems Change: Pragmatic Approaches to Moving Decarbonization Markets',
     track: null,
     description: 'Closing conversation on how diverse expertise—from venture investing to policy and the built environment—can come together to accelerate the clean energy transition. This fireside chat will explore how cross-sector collaboration is unlocking scalable climate solutions, the role of capital in driving innovation, and what it takes to turn ambitious climate goals into real-world impact.',
     speakers: [
@@ -186,13 +186,13 @@ const day2Schedule: Day2Item[] = [
     speakers: [],
     panels: [
       {
-        title: 'Community and Economic Development Strategies for Booming Energy Demand',
+        title: 'Economic Development Strategies for Booming Energy Demand',
         track: 'Policy & Markets',
         description: 'This panel will explore the strategies communities and their partners can employ to harness this new era of energy growth to their benefit. From working with developers to government agencies, we\'ll dig into how communities can be strategic about surging energy demand and leverage the energy boom for local economic development.',
         speakers: [
           { name: 'Kate Gordon', title: 'CEO, California Forward' },
           { name: 'Wahleah Johns', title: 'Managing Director, Four Directions Fund' },
-          { name: 'Sarah Friedman', title: 'Founder, Building Better Data Centers' },
+          { name: 'Sarah Friedman', title: 'Founder, Better Data Center Project' },
         ],
       },
       {
@@ -349,7 +349,7 @@ const day2Schedule: Day2Item[] = [
           { name: 'Pete Edmunds', title: 'Partnerships Director, Voltus' },
           { name: 'Zachary Struyk', title: 'Associate Director, San Jose Clean Energy' },
           { name: 'Eric Gimon', title: 'Senior Fellow, Energy Innovation' },
-          { name: 'Jeff Deason', title: 'Energy and Environmental Policy Researcher, Lawrence Berkeley National Laboratory' },
+          { name: 'Sarah Smith', title: 'Energy and Environment Research Scientist, Lawrence Berkeley National Lab' },
         ],
       },
     ],
