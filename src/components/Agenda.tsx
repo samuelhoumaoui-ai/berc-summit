@@ -186,7 +186,7 @@ const day2Schedule: Day2Item[] = [
     speakers: [],
     panels: [
       {
-        title: 'Economic Development Strategies for Booming Energy Demand',
+        title: 'Power Plays: How Communities Can Own the Energy Boom',
         track: 'Policy & Markets',
         description: 'This panel will explore the strategies communities and their partners can employ to harness this new era of energy growth to their benefit. From working with developers to government agencies, we\'ll dig into how communities can be strategic about surging energy demand and leverage the energy boom for local economic development.',
         speakers: [
@@ -198,11 +198,12 @@ const day2Schedule: Day2Item[] = [
       {
         title: 'Breaking the Interconnection Bottleneck: How Projects Actually Get Built',
         track: 'Grid & Infrastructure',
-        description: 'This panel seeks to explain why interconnection has become such a critical bottleneck for energy developers and explore some of the strategies developers are using to work around it. We will weigh behind-the-meter/on-site microgrids, software, and permitting reform as potential solutions.',
+        description: 'This panel seeks to explain why interconnection has become such a critical bottleneck for energy developers and explore some of the strategies developers are using to work around it. We will weigh behind-the-meter/ on-site microgrids, software, and permitting reform as potential solutions.',
         speakers: [
           { name: 'Liane Randolph', title: 'Former Chair of the California Air Resources Board & California Public Utilities Commissioner' },
           { name: 'Andrew Spurling', title: 'Director of Development, White Pine Renewables' },
-          { name: 'Jin Noh', title: 'Associate Director, Business Development, West, EDF Renewables' },
+          { name: 'Jin Noh', title: 'EDF Renewables, Associate Director, Business Development, West' },
+          { name: 'Owen Teach', title: 'Beale Infrastructure, Director of Energy' },
         ],
       },
     ],
