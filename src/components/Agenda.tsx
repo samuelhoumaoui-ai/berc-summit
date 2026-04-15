@@ -201,7 +201,7 @@ const day2Schedule: Day2Item[] = [
         description: 'This panel seeks to explain why interconnection has become such a critical bottleneck for energy developers and explore some of the strategies developers are using to work around it. We will weigh behind-the-meter/ on-site microgrids, software, and permitting reform as potential solutions.',
         speakers: [
           { name: 'Liane Randolph', title: 'Former Chair of the California Air Resources Board & California Public Utilities Commissioner' },
-          { name: 'Andrew Spurling', title: 'Director of Development, White Pine Renewables' },
+          { name: 'Andrew Sundling', title: 'Director of Development, White Pine Renewables' },
           { name: 'Jin Noh', title: 'EDF Renewables, Associate Director, Business Development, West' },
           { name: 'Owen Teach', title: 'Beale Infrastructure, Director of Energy' },
         ],
