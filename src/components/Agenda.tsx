@@ -19,13 +19,15 @@ const day1Schedule = [
   },
   {
     time: '9:10 – 9:30 AM',
-    type: 'keynote' as const,
-    title: 'Opening Keynote: Welcome to the Electrocene',
+    type: 'speaker' as const,
+    title: 'Amaani Hamid',
+    speakerTitle: 'Head of Flexibility as a Service, Octopus Energy',
+    speakerSubtitle: 'Keynote',
+    speakerImage: '/images/Headline Speakers/Amaani Hamid.jpg',
+    speakerImagePosition: 'center center',
     track: null,
     description: '',
-    speakers: [
-      { name: 'Amaani Hamid', title: 'Head of Flexibility as a Service, Octopus Energy', headshot: '/images/Headline Speakers/Amaani Hamid.jpg' },
-    ],
+    speakers: [],
   },
   {
     time: '9:30 – 10:00 AM',
@@ -154,6 +156,7 @@ const day2Schedule: Day2Item[] = [
     type: 'speaker',
     title: 'David Hochschild',
     speakerTitle: 'Chair of the California Energy Commission',
+    speakerSubtitle: 'Opening Keynote',
     speakerImage: '/images/Headline Speakers/David Hochschild.jpg',
     speakerImagePosition: 'center 30%',
     track: null,
@@ -165,6 +168,7 @@ const day2Schedule: Day2Item[] = [
     type: 'speaker',
     title: 'Gerard Reid',
     speakerTitle: 'Co-Founder and Host of the Redefining Energy Podcast, Co-Founder of Alexa Capital',
+    speakerSubtitle: 'Keynote Presentation',
     speakerImage: '/images/Headline Speakers/Gerard Reid.jpg',
     speakerImagePosition: 'center center',
     track: null,
@@ -262,7 +266,7 @@ const day2Schedule: Day2Item[] = [
     type: 'speaker',
     title: 'Ryan Wiser',
     speakerTitle: 'Senior Scientist & Senior Advisor, Lawrence Berkeley National Laboratory',
-    speakerSubtitle: 'Berkeley Lab Presentation on Energy Markets',
+    speakerSubtitle: 'Keynote Presentation',
     speakerImage: '/images/Headline Speakers/Ryan Wiser.jpg',
     speakerImagePosition: 'center center',
     track: null,
@@ -274,6 +278,7 @@ const day2Schedule: Day2Item[] = [
     type: 'speaker',
     title: 'Sarah Jewett',
     speakerTitle: 'Senior Vice President for Strategy at Fervo Energy',
+    speakerSubtitle: 'Keynote',
     speakerImage: '/images/Headline Speakers/Sarah Jewett_Headshot_Cape.jpg',
     speakerImagePosition: 'center center',
     track: null,
@@ -544,6 +549,57 @@ export default function Agenda() {
                         {item.title}
                       </span>
                       <div className="h-px flex-1 bg-[var(--text-gray)]/15" />
+                    </motion.div>
+                  );
+                }
+
+                if (item.type === 'speaker') {
+                  return (
+                    <motion.div
+                      key={item.title + item.time}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.05 * index }}
+                      className="vintage-border bg-[var(--gray-light)]/50"
+                    >
+                      <div className="p-4 md:p-6">
+                        <div className="flex items-center gap-2 mb-4 flex-wrap">
+                          <div className="flex items-center gap-1.5">
+                            <Clock className="w-3 h-3 text-[var(--text-gray)]/60" />
+                            <span className="font-typewriter text-xs text-[var(--text-gray)]/70 whitespace-nowrap">
+                              {item.time}
+                            </span>
+                          </div>
+                          {item.speakerSubtitle && (
+                            <span className="text-xs px-2 py-1 bg-[var(--accent-electric)]/20 text-[var(--accent-electric)] rounded">
+                              {item.speakerSubtitle}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-5">
+                          {item.speakerImage && (
+                            <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[var(--accent-electric)]/30 relative">
+                              <Image
+                                src={item.speakerImage}
+                                alt={item.title}
+                                fill
+                                className="object-cover"
+                                style={{ objectPosition: item.speakerImagePosition || 'center center' }}
+                              />
+                            </div>
+                          )}
+                          <div>
+                            <h3 className="font-typewriter text-lg md:text-xl text-[var(--text-white)]">
+                              {item.title}
+                            </h3>
+                            {item.speakerTitle && (
+                              <p className="text-sm text-[var(--text-gray)] mt-1 leading-snug">
+                                {item.speakerTitle}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
                     </motion.div>
                   );
                 }
