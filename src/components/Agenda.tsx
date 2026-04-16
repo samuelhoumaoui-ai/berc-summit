@@ -385,7 +385,7 @@ const day2Schedule: Day2Item[] = [
     title: 'Mark Rohan',
     speakerTitle: 'Chief of Staff, Heron Power',
     speakerSubtitle: 'Closing Keynote',
-    speakerImage: '/images/Headline Speakers/Mark Rohan.jpg',
+    speakerImage: '/images/Headline Speakers/10.Mark Rohan.png',
     speakerImagePosition: 'center center',
     track: null,
     description: '',
