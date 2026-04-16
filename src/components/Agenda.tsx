@@ -338,6 +338,7 @@ const day2Schedule: Day2Item[] = [
         description: 'In this era of the Electrocene, electricity demand is accelerating, driven by AI, data center expansion, electrification, and industrial growth. Meeting this surge requires unprecedented investment in large-scale energy infrastructure. How is capital flowing across growth, infrastructure, and platform phases to finance what gets built? This panel brings together investors and a late-stage operator to examine how markets are responding to policy shifts, rising load, and the need to balance reliability, affordability, and decarbonization.',
         speakers: [
           { name: 'Margaret Roddy', title: 'Vice President, TPG Rise Climate' },
+          { name: 'Helen Wang', title: 'Vice President, Climate & Frontier, HSBC Innovation Banking' },
           { name: 'Natalia Costa i Coromina', title: 'Senior Associate, Impact, Energy Impact Partners' },
           { name: 'Daniel Kriozere', title: 'Director, Capital and Strategic Partnerships, Venture for ClimateTech (Moderator)' },
         ],
