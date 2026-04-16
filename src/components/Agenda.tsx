@@ -107,7 +107,7 @@ const day1Schedule = [
     track: null,
     description: 'Closing conversation on how diverse expertise—from venture investing to policy and the built environment—can come together to accelerate the clean energy transition. This fireside chat will explore how cross-sector collaboration is unlocking scalable climate solutions, the role of capital in driving innovation, and what it takes to turn ambitious climate goals into real-world impact.',
     speakers: [
-      { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures', headshot: '/images/Headline Speakers/Elaine Hseih.jpg' },
+      { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures', headshot: '/images/Headline Speakers/Elaine Hsieh.jpg' },
       { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition', headshot: '/images/Headline Speakers/Panama Bartholomy.jpg' },
     ],
   },
@@ -598,6 +598,58 @@ export default function Agenda() {
                               </p>
                             )}
                           </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  );
+                }
+
+                if (item.type === 'closing') {
+                  return (
+                    <motion.div
+                      key={item.title + item.time}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.05 * index }}
+                      className="vintage-border bg-[var(--gray-light)]/50"
+                    >
+                      <div className="p-4 md:p-6">
+                        <div className="flex items-center gap-2 mb-4 flex-wrap">
+                          <div className="flex items-center gap-1.5">
+                            <Clock className="w-3 h-3 text-[var(--text-gray)]/60" />
+                            <span className="font-typewriter text-xs text-[var(--text-gray)]/70 whitespace-nowrap">
+                              {item.time}
+                            </span>
+                          </div>
+                          <span className="text-xs px-2 py-1 bg-[var(--accent-electric)]/20 text-[var(--accent-electric)] rounded">
+                            Closing Fireside
+                          </span>
+                        </div>
+                        <h3 className="font-typewriter text-lg md:text-xl text-[var(--text-white)] mb-5">
+                          {item.title}
+                        </h3>
+                        <div className="flex flex-col sm:flex-row gap-5">
+                          {item.speakers.map((speaker) => (
+                            <div key={speaker.name} className="flex items-center gap-4">
+                              {speaker.headshot && (
+                                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[var(--accent-electric)]/30 relative">
+                                  <Image
+                                    src={speaker.headshot}
+                                    alt={speaker.name}
+                                    fill
+                                    className="object-cover"
+                                    style={{ objectPosition: 'center center' }}
+                                  />
+                                </div>
+                              )}
+                              <div>
+                                <p className="font-typewriter text-base text-[var(--text-white)]">{speaker.name}</p>
+                                {speaker.title && (
+                                  <p className="text-sm text-[var(--text-gray)] mt-0.5 leading-snug">{speaker.title}</p>
+                                )}
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </motion.div>
