@@ -97,7 +97,6 @@ const day1Schedule = [
     speakers: [
       { name: 'Luis Gonzalez', title: 'Microsoft' },
       { name: 'Nehali Jain', title: 'Antora Energy' },
-      { name: 'PG&E', title: '' },
     ],
   },
   {
@@ -632,13 +631,11 @@ export default function Agenda() {
                           {item.speakers.map((speaker) => (
                             <div key={speaker.name} className="flex items-center gap-4">
                               {speaker.headshot && (
-                                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[var(--accent-electric)]/30 relative">
-                                  <Image
+                                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[var(--accent-electric)]/30">
+                                  <img
                                     src={speaker.headshot}
                                     alt={speaker.name}
-                                    fill
-                                    className="object-cover"
-                                    style={{ objectPosition: 'center center' }}
+                                    className="w-full h-full object-cover object-center"
                                   />
                                 </div>
                               )}
