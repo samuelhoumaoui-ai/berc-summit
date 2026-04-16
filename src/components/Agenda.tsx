@@ -83,7 +83,7 @@ const day1Schedule = [
     track: 'Grid & Infrastructure',
     description: 'An academic perspective on the latest research on the interconnection bottleneck and what it will take to unlock faster grid expansion. The session covers the end-to-end interconnection process, emerging pathways like energy-only and surplus interconnection, and new findings on data center load growth and co-location. A structured breakout discussion will explore frontier questions on interconnection market design, centralized grid planning, co-located resource frameworks, and the political economy of steering hyperscaler power demand toward lower-emissions solutions.',
     speakers: [
-      { name: 'Emilia Chojkiewicz', title: 'PhD Student, Energy & Resources Group at Rausser College of Natural Resources; Research Associate, Lawrence Berkeley National Lab and UC Berkeley\'s India Energy and Climate Center (IECC)' },
+      { name: 'Emilia Chojkiewicz', title: 'PhD Student, Energy & Resources Group at Rausser College of Natural Resources' },
     ],
   },
   {
