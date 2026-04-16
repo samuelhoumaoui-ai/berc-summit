@@ -236,7 +236,7 @@ const day2Schedule: Day2Item[] = [
         speakers: [
           { name: 'Melissa Zhang', title: 'Principal, Azimuth Capital Management' },
           { name: 'Leonardo Banchik, PhD', title: 'Partner, Voyager Ventures' },
-          { name: 'Dave Snydacker', title: 'Founder and CTO, Lilac Solutions' },
+          { name: 'Nicolas Grosso', title: 'Senior Business Development Manager, Lilac Solutions' },
         ],
       },
       {
