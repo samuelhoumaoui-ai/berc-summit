@@ -403,11 +403,6 @@ const day2Schedule: Day2Item[] = [
 
 const day2EmergingTech = [
   {
-    company: 'CalWave',
-    description: "CalWave develops scalable ocean wave energy converters that harness offshore wave power to deliver reliable, cost-effective clean electricity.",
-    speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder', headshot: '/images/Headline Speakers/Marcus Lehmann.jpg' },
-  },
-  {
     company: 'Hammerhead AI',
     description: "Hammerhead.ai builds AI-native software for grid operators and utilities to transform stranded power in data centers into AI-ready capacity.",
     speaker: { name: 'Surya Swamy', title: 'Head of Product Strategy', headshot: '/images/Power Hour/Surya headshot final.png' },
@@ -416,6 +411,11 @@ const day2EmergingTech = [
     company: 'Kairos Power',
     description: "Kairos Power is commercializing a fluoride salt-cooled high-temperature reactor designed to deliver safe, affordable, and dispatchable clean energy at scale.",
     speaker: { name: 'Candice Yu', title: 'Director of Business Development', headshot: '/images/Power Hour/Candice Yu.jpeg' },
+  },
+  {
+    company: 'CalWave',
+    description: "CalWave develops scalable ocean wave energy converters that harness offshore wave power to deliver reliable, cost-effective clean electricity.",
+    speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder', headshot: '/images/Headline Speakers/Marcus Lehmann.jpg' },
   },
 ];
 
