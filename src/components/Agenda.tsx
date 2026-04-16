@@ -107,7 +107,7 @@ const day1Schedule = [
     description: 'Closing conversation on how diverse expertise—from venture investing to policy and the built environment—can come together to accelerate the clean energy transition. This fireside chat will explore how cross-sector collaboration is unlocking scalable climate solutions, the role of capital in driving innovation, and what it takes to turn ambitious climate goals into real-world impact.',
     speakers: [
       { name: 'Elaine Hsieh', title: 'COO of Volo Earth Ventures', headshot: '/images/Headline Speakers/Elaine Hsieh.jpg' },
-      { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition', headshot: '/images/Headline Speakers/Panama Bartholomy.jpg' },
+      { name: 'Panama Bartholomy', title: 'Director of the Building Decarbonization Coalition', headshot: '/images/Headline Speakers/Panama Bartholomy.png' },
     ],
   },
 ];
