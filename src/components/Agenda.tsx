@@ -627,9 +627,9 @@ export default function Agenda() {
                               {item.track}
                             </span>
                           )}
-                          {(item.type === 'keynote' || item.type === 'fireside' || item.type === 'closing') && (
+                          {(item.type === 'fireside' || item.type === 'closing') && (
                             <span className="text-xs px-2 py-1 bg-[var(--text-gray)]/10 text-[var(--text-gray)] rounded">
-                              {item.type === 'keynote' ? 'Keynote' : item.type === 'fireside' ? 'Fireside Chat' : 'Closing'}
+                              {item.type === 'fireside' ? 'Fireside Chat' : 'Closing'}
                             </span>
                           )}
                         </div>
