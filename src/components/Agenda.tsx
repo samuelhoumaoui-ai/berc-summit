@@ -79,10 +79,12 @@ const day1Schedule = [
   {
     time: '2:00 – 3:00 PM',
     type: 'workshop' as const,
-    title: 'Workshop: Interconnection — Unlocking the Grid Expansion',
+    title: 'Workshop: Interconnection - Accelerating Resource Integration',
     track: 'Grid & Infrastructure',
-    description: 'Give participants a practical, end-to-end understanding of the interconnection process, why timelines have exploded, and what emerging regulatory, technological, and market reforms could unlock faster grid expansion — with a special focus on new AI-driven load growth.',
-    speakers: [],
+    description: 'An academic perspective on the latest research on the interconnection bottleneck and what it will take to unlock faster grid expansion. The session covers the end-to-end interconnection process, emerging pathways like energy-only and surplus interconnection, and new findings on data center load growth and co-location. A structured breakout discussion will explore frontier questions on interconnection market design, centralized grid planning, co-located resource frameworks, and the political economy of steering hyperscaler power demand toward lower-emissions solutions.',
+    speakers: [
+      { name: 'Emilia Chojkiewicz', title: 'PhD Student, Energy & Resources Group at Rausser College of Natural Resources; Research Associate, Lawrence Berkeley National Lab and UC Berkeley\'s India Energy and Climate Center (IECC)' },
+    ],
   },
   {
     time: '3:00 – 4:00 PM',
