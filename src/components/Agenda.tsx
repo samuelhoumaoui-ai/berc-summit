@@ -47,7 +47,9 @@ const day1Schedule = [
     track: 'Policy & Markets',
     description: 'Equip attendees with a practical understanding of how project finance works for renewable energy projects—how debt is sized, how lenders assess risk, and how financial structures determine whether a project is viable.',
     speakers: [
-      { name: 'Clearway Energy', title: 'Capital Markets Team' },
+      { name: 'James Harvey', title: 'Capital Markets, Clearway Energy' },
+      { name: 'Sophia Roberts-Tara', title: 'Capital Markets, Clearway Energy' },
+      { name: 'Grant Chang-Chien', title: 'Capital Markets, Clearway Energy' },
     ],
   },
   {
