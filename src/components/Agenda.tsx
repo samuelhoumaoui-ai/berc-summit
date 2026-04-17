@@ -99,6 +99,7 @@ const day1Schedule = [
     speakers: [
       { name: 'Luis Gonzalez', title: 'Microsoft' },
       { name: 'Nehali Jain', title: 'Antora Energy' },
+      { name: 'Karen Khamou Ornelas', title: 'Director, State Infrastructure, Electric Operations, PG&E' },
     ],
   },
   {
