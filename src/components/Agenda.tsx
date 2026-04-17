@@ -310,6 +310,7 @@ const day2Schedule: Day2Item[] = [
           { name: 'Julia Selker', title: 'Executive Director, Watt Coalition' },
           { name: 'Tom Nudell', title: 'CEO, Piq Energy' },
           { name: 'Matthew Baker', title: 'Commissioner, California Public Utilities Commission' },
+          { name: 'Mohini Barya', title: 'Principal Scientist, Rhiza Research; Lecturer, UC Berkeley' },
         ],
       },
       {
