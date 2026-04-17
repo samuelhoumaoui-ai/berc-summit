@@ -320,6 +320,7 @@ const day2Schedule: Day2Item[] = [
         speakers: [
           { name: 'Jonathan Lesh', title: 'Project Finance Associate, Antora Energy' },
           { name: 'Suraj Patel', title: 'Senior Manager, Solutions Engineering, Calibrant Energy' },
+          { name: 'Crystal Jain', title: 'Manager, Battery Engineering, Form Energy' },
           { name: 'Phillipe Phanivong', title: 'Senior Program Manager, Grid Lab (Moderator)' },
         ],
       },
