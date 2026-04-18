@@ -103,7 +103,7 @@ const day1Schedule = [
     ],
   },
   {
-    time: '4:00 – 4:30 PM',
+    time: '4:00 – 4:45 PM',
     type: 'closing' as const,
     title: 'Closing Fireside Chat: How Systems Change: Pragmatic Approaches to Moving Decarbonization Markets',
     track: null,
