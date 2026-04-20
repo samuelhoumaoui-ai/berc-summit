@@ -83,7 +83,15 @@ export default function Footer() {
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-white/40 text-xs">
-            © 2026 Berkeley Energy & Resources Collaborative. All rights reserved.
+            © 2026 Berkeley Energy & Resources Collaborative. All rights reserved.{' '}
+            <a
+              href="/Summit-Agenda.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/10 hover:text-white/10 select-none"
+              aria-hidden="true"
+              tabIndex={-1}
+            >·</a>
           </p>
           <div className="flex gap-6 text-xs text-white/40">
             <Link href="/privacy" className="hover:text-white transition-colors">
