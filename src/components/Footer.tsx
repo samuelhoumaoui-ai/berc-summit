@@ -44,6 +44,18 @@ export default function Footer() {
           </div>
 
           <div>
+            <h4 className="font-typewriter text-[var(--accent-electric)] mb-4 text-sm tracking-wide">Resources</h4>
+            <a
+              href="/Summit-Agenda.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-bold text-[var(--accent-electric)] text-sm hover:underline"
+            >
+              Agenda PDF-Version
+            </a>
+          </div>
+
+          <div>
             <h4 className="font-typewriter text-[var(--accent-electric)] mb-4 text-sm tracking-wide">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link href="#about" className="text-white/60 hover:text-white transition-colors text-sm">About</Link></li>
@@ -83,15 +95,7 @@ export default function Footer() {
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-white/40 text-xs">
-            © 2026 Berkeley Energy & Resources Collaborative. All rights reserved.{' '}
-            <a
-              href="/Summit-Agenda.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/10 hover:text-white/10 select-none"
-              aria-hidden="true"
-              tabIndex={-1}
-            >·</a>
+            © 2026 Berkeley Energy & Resources Collaborative. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-white/40">
             <Link href="/privacy" className="hover:text-white transition-colors">
