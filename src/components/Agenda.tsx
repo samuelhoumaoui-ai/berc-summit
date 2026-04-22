@@ -154,25 +154,13 @@ const day2Schedule: Day2Item[] = [
     speakers: [],
   },
   {
-    time: '9:05 – 9:30 AM',
+    time: '9:15 – 10:00 AM',
     type: 'speaker',
     title: 'David Hochschild',
     speakerTitle: 'Chair of the California Energy Commission',
     speakerSubtitle: 'Opening Keynote',
     speakerImage: '/images/Headline Speakers/David Hochschild.jpg',
     speakerImagePosition: 'center 30%',
-    track: null,
-    description: '',
-    speakers: [],
-  },
-  {
-    time: '9:35 – 10:00 AM',
-    type: 'speaker',
-    title: 'Gerard Reid',
-    speakerTitle: 'Co-Founder and Host of the Redefining Energy Podcast, Co-Founder of Alexa Capital',
-    speakerSubtitle: 'Keynote Presentation',
-    speakerImage: '/images/Headline Speakers/Gerard Reid.jpg',
-    speakerImagePosition: 'center center',
     track: null,
     description: '',
     speakers: [],
@@ -419,7 +407,7 @@ const day2EmergingTech = [
   {
     company: 'CalWave',
     description: "CalWave develops scalable ocean wave energy converters that harness offshore wave power to deliver reliable, cost-effective clean electricity.",
-    speaker: { name: 'Marcus Lehmann', title: 'CEO and Founder', headshot: '/images/Headline Speakers/Marcus Lehmann.jpg' },
+    speaker: { name: 'Thomas Boerner', title: 'Co-Founder and CTO', headshot: '/images/Headline Speakers/Thomas B.jpg' },
   },
 ];
 
@@ -940,7 +928,7 @@ export default function Agenda() {
                             className="mt-4 border-t border-[var(--text-gray)]/20 pt-4"
                           >
                             <p className="text-[var(--text-gray)] text-sm leading-relaxed mb-6">
-                              The Emerging Tech Lightning Round is a curated showcase featuring 10-minute presentations from early-stage clean energy companies — spanning industrial decarbonization, advanced storage, home electrification, and advanced nuclear. Speakers cover their core technology, founding thesis, and deployment progress to date.
+                              The Emerging Tech Lightning Round is a curated showcase featuring 15-minute presentations from early-stage clean energy companies — spanning industrial decarbonization, advanced storage, home electrification, and advanced nuclear. Speakers cover their core technology, founding thesis, and deployment progress to date.
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                               {day2EmergingTech.map((tech) => (
